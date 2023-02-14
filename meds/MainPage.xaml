@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="meds.MainPage"
+             BackgroundColor="#96AD9A">
+
+    <StackLayout>
+        <Frame
+           HeightRequest="50"
+           WidthRequest="120">
+            <Label Text="MEDS" FontSize="26" TextColor="White"/>
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#788B91"
+                          Offset="0.1" />
+                    <GradientStop Color="#96AD9A"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Здесь будет какой-то текст"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button 
+            Text="Куку"
+            Clicked="ButtonClicked"/>
+    </StackLayout>
+</ContentPage>
